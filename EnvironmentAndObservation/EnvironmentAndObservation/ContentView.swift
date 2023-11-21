@@ -9,13 +9,41 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        NavigationView {
+            List {
+                Section("environment") {
+                    NavigationLink("Environment RToL Test") {
+                        EnvironmentRToLTestView()
+                    }
+                    
+                    NavigationLink("Dismiss Test") {
+                        DismissTestView()
+                    }
+                    
+                    NavigationLink("OpenURL Test") {
+                        OpenURLTestView()
+                    }
+                    
+                    NavigationLink("Custom Environment View") {
+                        CustomEnvironmentTestView()
+                    }
+                    
+                    NavigationLink("Custom Theme") {
+                        ThemeView()
+                    }
+                } //: Section
+                
+                Section("environment object") {
+                    NavigationLink("Flow Test") {
+                        RootView()
+                    }
+                } //: Section
+                
+                Section("Observation") {
+                    
+                }
+            } //: List
+        } //: NavigationView
     }
 }
 
