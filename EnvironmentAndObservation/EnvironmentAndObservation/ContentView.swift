@@ -40,7 +40,17 @@ struct ContentView: View {
                 } //: Section
                 
                 Section("Observation") {
+                    NavigationLink("Observation Test View") {
+                        StoreTestView()
+                    }
                     
+                    NavigationLink("Bindable") {
+                        BindableTestView()
+                    }
+                    
+                    NavigationLink("Child Observable") {
+                        ItemTestView()
+                    }
                 }
             } //: List
         } //: NavigationView
