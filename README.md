@@ -1,2 +1,2 @@
 # EnvironmentAndObservation
-11월 21일 강의
+11월 25일 강의
